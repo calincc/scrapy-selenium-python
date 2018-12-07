@@ -7,7 +7,7 @@ import scrapy
 
 
 class BaseScrapySeleniumTestCase(TestCase):
-    """Base test case for the ``scrapy-selenium`` package"""
+    """Base test case for the ``scrapy-selenium-python`` package"""
 
     class SimpleSpider(scrapy.Spider):
         name = 'simple_spider'
