@@ -3,7 +3,7 @@ Scrapy middleware to handle javascript pages using selenium.
 
 ## Installation
 ```
-$ pip install scrapy-selenium-legacy
+$ pip install scrapy_selenium_python_pi
 ```
 You should use **python>=3.5**. 
 You will also need one of the Selenium [compatible browsers](http://www.seleniumhq.org/about/platforms.jsp).
@@ -21,13 +21,13 @@ You will also need one of the Selenium [compatible browsers](http://www.selenium
 2. Add the `SeleniumMiddleware` to the downloader middlewares:
     ```python
     DOWNLOADER_MIDDLEWARES = {
-        'scrapy_selenium_legacy.SeleniumMiddleware': 800
+        'scrapy_selenium_python_pi.SeleniumMiddleware': 800
     }
     ```
 ## Usage
-Use the `scrapy_selenium_legacy.SeleniumRequest` instead of the scrapy built-in `Request` like below:
+Use the `scrapy_selenium_python_pi.SeleniumRequest` instead of the scrapy built-in `Request` like below:
 ```python
-from scrapy_selenium_legacy import SeleniumRequest
+from scrapy_selenium_python_pi import SeleniumRequest
 
 yield SeleniumRequest(url, self.parse_result)
 ```
@@ -45,7 +45,7 @@ def parse_result(self, response):
 ```
 
 ### Additional arguments
-The `scrapy_selenium_legacy.SeleniumRequest` accept 3 additional arguments:
+The `scrapy_selenium_python_pi.SeleniumRequest` accept 3 additional arguments:
 
 #### `wait_time` / `wait_until`
 

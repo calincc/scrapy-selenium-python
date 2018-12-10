@@ -23,7 +23,7 @@ before_script:
   - sleep 3
 
 script:
-- pytest --cov-config .coveragerc --cov=scrapy_selenium_legacy tests/
+- pytest --cov-config .coveragerc --cov=scrapy_selenium_python_pi tests/
 - codeclimate-test-reporter
 
 notifications:
