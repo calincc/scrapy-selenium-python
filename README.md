@@ -3,7 +3,7 @@ Scrapy middleware to handle javascript pages using selenium.
 
 ## Installation
 ```
-$ pip install scrapy-selenium-python
+$ pip install scrapy-selenium-legacy
 ```
 You should use **python>=3.5**. 
 You will also need one of the Selenium [compatible browsers](http://www.seleniumhq.org/about/platforms.jsp).
