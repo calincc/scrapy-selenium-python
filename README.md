@@ -21,13 +21,13 @@ You will also need one of the Selenium [compatible browsers](http://www.selenium
 2. Add the `SeleniumMiddleware` to the downloader middlewares:
     ```python
     DOWNLOADER_MIDDLEWARES = {
-        'scrapy_selenium.SeleniumMiddleware': 800
+        'scrapy_selenium_legacy.SeleniumMiddleware': 800
     }
     ```
 ## Usage
-Use the `scrapy_selenium.SeleniumRequest` instead of the scrapy built-in `Request` like below:
+Use the `scrapy_selenium_legacy.SeleniumRequest` instead of the scrapy built-in `Request` like below:
 ```python
-from scrapy_selenium import SeleniumRequest
+from scrapy_selenium_legacy import SeleniumRequest
 
 yield SeleniumRequest(url, self.parse_result)
 ```
@@ -45,7 +45,7 @@ def parse_result(self, response):
 ```
 
 ### Additional arguments
-The `scrapy_selenium.SeleniumRequest` accept 3 additional arguments:
+The `scrapy_selenium_legacy.SeleniumRequest` accept 3 additional arguments:
 
 #### `wait_time` / `wait_until`
 
